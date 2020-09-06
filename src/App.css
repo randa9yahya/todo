@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+body > #root > div > .light-mode {
+  height: 100vh; 
+  background-color: #f4f4f4;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body > #root > div > .dark-mode {
+  height: 100vh; 
+  background-color: #222831;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  min-height: 600px;
+  width: 400px;
+  margin:40px auto;
+  border-radius:10px ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.formIput{
+background-color: #d49a89;
+color: #f6f4e6;
+margin-top: 40px;
+border: 0;
+/* padding: 0 20px; */
+text-align: center;
+width: 399px;
+height: 50px;
+border-radius:90% 10% 87% 13% / 0% 100% 0% 100% ;
+font-size: 22px;
+font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.form input::placeholder{
+  color: #f6f4e6;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input:focus,.form  button:focus{
+  outline:none;
+}
+.form > button{
+  height: 50px;
+  width: 90px;
+  position: relative;
+  left: 150px;
+  margin-bottom: 12px;
+  border: 0;
+  border-radius:78% 22% 70% 30% / 0% 100% 0% 100%  ;
+  margin-top: 20px;
+  background-color: #d49a89;
+  color:#ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.form > button:hover{
+  transform: scale(1.1);
+}
+.light-mode .app{
+  background-color: #557571;
+}
+.light-mode .modeBtn{
+  background-color: #557571;
+}
+.dark-mode .app{
+background-color: #393e46;
+}
+.dark-mode .modeBtn{
+  background-color: #d49a89;
+}
+.modeBtn{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  margin: 8px 0 0 20px;
+}
+.modeBtn:focus{
+  outline: none;
 }
